@@ -1,0 +1,32 @@
+{
+  "name": "ceb-provider-check-ftp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "4.0.0",
+    "moment": "2.19.1",
+    "mongoose": "5.2.8",
+    "node-schedule": "1.3.1",
+    "nodemon": "1.12.1",
+    "uuid": "3.3.2",
+    "windows-scheduler": "1.0.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "jest": "23.6.0",
+    "sinon": "7.1.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/(lib|build|docs|node_modules)/"
+    ]
+  }
+}
