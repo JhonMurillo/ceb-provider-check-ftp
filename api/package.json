@@ -1,22 +1,26 @@
 {
-  "name": "ceb-provider-check-ftp",
+  "name": "api-provider-check-ftp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest --watch",
-    "start": "nodemon ./src/index.js"
+    "start": "node ./src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-eslint": "8.0.1",
+    "body-parser": "1.18.2",
+    "card-validator": "4.1.0",
+    "eslint": "4.7.2",
+    "express": "4.15.5",
     "dotenv": "4.0.0",
-    "moment": "2.19.1",
+    "moment": "2.19.3",
     "mongoose": "5.2.8",
-    "node-schedule": "1.3.1",
-    "nodemon": "1.12.1",
-    "uuid": "3.3.2",
-    "windows-scheduler": "1.0.1"
+    "joi": "13.1.1",
+    "joi-date-extensions": "1.2.0",
+    "nodemon": "1.12.1"
   },
   "devDependencies": {
     "chai": "4.2.0",

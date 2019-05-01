@@ -3,7 +3,11 @@ const moment = require('moment');
 const func = require("../src/funtions/index")
 const {serviceModel} = require("../src/helpers/db/mongo/model/service")
 
-const loop = schedule.scheduleJob(`0 16 * * * *`, async () => {
+let ruleMain = {};
+ruleMain.minute = 05;
+
+
+const loop = schedule.scheduleJob(`${ruleMain.minute} * * * * *`, async () => {
     console.log('Loop ' + moment().format('MM/DD/YYYY HH:mm:ss'));
     let service = null
     try {
