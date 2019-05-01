@@ -7,7 +7,7 @@ let ruleMain = {};
 ruleMain.minute = 05;
 
 
-const loop = schedule.scheduleJob(`${ruleMain.minute} * * * * *`, async () => {
+const loop = schedule.scheduleJob(`00 00 06 * * *`, async () => {
     console.log('Loop ' + moment().format('MM/DD/YYYY HH:mm:ss'));
     let service = null
     try {

@@ -14,8 +14,10 @@ app.use(function (req, res, next) {
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
 // Load api routes
-app.use('/', routes);
+app.use('/api', routes);
+
 
 //Handling errors
 app.use((error, req, res, next) => {

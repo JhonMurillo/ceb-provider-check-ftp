@@ -1,7 +1,7 @@
 const inputValidation = require('../../middlewares/inputValidation');
 const schema = require('./getServices.scheme');
 const validate = inputValidation.validate(schema.schema);
-const {providerModel} = require('../../helpers/db/mongo/model/service');
+const {serviceModel} = require('../../helpers/db/mongo/model/service');
 
 
 async function handler(req, res, next) {
@@ -9,7 +9,7 @@ async function handler(req, res, next) {
     //Input
     const date = req.query.date;
 
-    let service = providerModel.findOne({ date} )
+    let service = serviceModel.findOne({ date} )
 
 
     if (!service) {
