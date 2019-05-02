@@ -1,0 +1,36 @@
+{
+  "name": "api-provider-check-ftp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "8.0.1",
+    "body-parser": "1.18.2",
+    "card-validator": "4.1.0",
+    "eslint": "4.7.2",
+    "express": "4.15.5",
+    "dotenv": "4.0.0",
+    "moment": "2.19.3",
+    "mongoose": "5.2.8",
+    "joi": "13.1.1",
+    "joi-date-extensions": "1.2.0",
+    "nodemon": "1.12.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "jest": "23.6.0",
+    "sinon": "7.1.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/(lib|build|docs|node_modules)/"
+    ]
+  }
+}
